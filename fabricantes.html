@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fabricantes</title>
+</head>
+
+<body>
+  
+    <h1>Formulario Fabricantes</h1>
+    <br>
+
+    <form action="processa.php" method="post">
+
+        <p>
+            <label for="nome">Produto:</label>
+            <input required type="text" name="prod" id="prod">
+        </p>
+        
+        <p><label for="fabricantes">Selecione o fabricante:</label>
+        <select id="fabricantes" name="fabricantes">
+            <option value="---">---</option>
+            <option value="Asus">Asus</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="LG">LG</option>
+            <option value="Brastemp">Brastemp</option>
+
+        </select>
+        
+        <p> <label>Preço </label> <input id="preco" type="number" min="100" max="1000" step=".01" name="preco"></p>
+        <p> <label>Quantidade: </label>  <input id="quant" type="number" min="0" max="50"  name="quant"> </p>
+    
+        <p><label for="text">Mensagem: </label></p>
+                
+        <p><textarea id="mensagem" name="mensagem" rows="5" cols="33" ></textarea></p>
+
+        <p><input class="submit" type="submit" name="envia" value="ENVIAR"></p>
+
+
+</body>
+
+</html>
